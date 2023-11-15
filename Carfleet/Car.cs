@@ -70,7 +70,8 @@ namespace Carfleet
 
         public override string ToString()
         {
-            //TODO
+            string tab = " - ";
+            return _registration + tab + _brand+ tab + _model + tab + _chassisNumber;
         }
         #endregion public methods
     }

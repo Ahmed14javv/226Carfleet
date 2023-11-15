@@ -25,7 +25,7 @@ namespace Carfleet
             //given
 
             //when
-            
+
             //then
             Assert.AreEqual(_registration, _car.Registration);
             Assert.AreEqual(_brand, _car.Brand);

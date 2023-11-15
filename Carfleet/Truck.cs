@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace Carfleet{
+namespace Carfleet
+{
     public class Truck
     {
         #region private attributes
@@ -13,14 +14,17 @@ namespace Carfleet{
         #region public methods
         public Truck(string registration, string brand, string model, string chassisNumber)
         {
-            throw new NotImplementedException();
+            _registration = registration;
+            _brand = brand;
+            _model = model;
+            _chassisNumber = chassisNumber;
         }
 
         public string Registration
         {
             get
             {
-                throw new NotImplementedException();
+                return _registration;
             }
             set
             {
@@ -32,7 +36,7 @@ namespace Carfleet{
         {
             get
             {
-                throw new NotImplementedException();
+                return _brand;
             }
             set
             {
@@ -44,7 +48,7 @@ namespace Carfleet{
         {
             get
             {
-                throw new NotImplementedException();
+                return _model;
             }
             set
             {
@@ -56,7 +60,7 @@ namespace Carfleet{
         {
             get
             {
-                throw new NotImplementedException();
+                return _chassisNumber;
             }
             set
             {

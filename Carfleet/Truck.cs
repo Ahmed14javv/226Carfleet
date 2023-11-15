@@ -28,7 +28,7 @@ namespace Carfleet
             }
             set
             {
-                throw new NotImplementedException();
+                _registration = value;
             }
         }
 
@@ -40,7 +40,7 @@ namespace Carfleet
             }
             set
             {
-                throw new NotImplementedException();
+                _brand = value;
             }
         }
 
@@ -52,7 +52,7 @@ namespace Carfleet
             }
             set
             {
-                throw new NotImplementedException();
+                _model = value;
             }
         }
 
@@ -64,7 +64,7 @@ namespace Carfleet
             }
             set
             {
-                throw new NotImplementedException();
+                _chassisNumber = value;
             }
         }
         #endregion public methods

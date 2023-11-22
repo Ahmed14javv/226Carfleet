@@ -56,7 +56,7 @@ namespace Carfleet
             }
         }
 
-        public List<string> Language
+        public List<string> Languages
         {
             get
             {

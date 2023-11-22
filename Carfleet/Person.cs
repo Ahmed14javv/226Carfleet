@@ -1,30 +1,68 @@
-﻿
+
+using System.Collections.Generic;
 
 namespace Carfleet
 {
     public class Person
     {
-        private string name;
-        private string firstname;
-        private string phonenumber;
-        private string emailAddress;
-        private string language;
 
-        public Person(string name, string firstname, string phonenumber, string emailAddress)
+        #region private attributes
+        private string _name;
+        private string _firstname;
+        private string _phonenumber;
+        private string _emailaddress;
+        private List<string> _languages;
+        #endregion private attributes
+
+        #region public methods
+        public Person(string name, string firstname, string phonenumber, string emailaddress, List<string> languages = null)
         {
-            this.name = name;
-            this.firstname = firstname;
-            this.phonenumber = phonenumber;
-            this.emailAddress = emailAddress;
+            _name = name;
+            _firstname = firstname;
+            _phonenumber = phonenumber;
+            _emailaddress = emailaddress;
+            _languages = languages;
         }
 
-        public Person(string name, string firstname, string phonenumber, string emailAddress, string language="")
+        public string Name
         {
-            this.name = name;
-            this.firstname = firstname;
-            this.phonenumber = phonenumber;
-            this.emailAddress = emailAddress;
-            this.language = language;
+            get
+            {
+                return _name;   
+            }
         }
+
+        public string Firstname
+        {
+            get
+            {
+                return _firstname;
+            }
+        }
+
+        public string Phonenumber
+        {
+            get
+            {
+                return _phonenumber;
+            }
+        }
+
+        public string Emailaddress
+        {
+            get
+            {
+                return _emailaddress;
+            }
+        }
+
+        public List<string> Language
+        {
+            get
+            {
+                return _languages;
+            }
+        }
+        #endregion public methods
     }
 }

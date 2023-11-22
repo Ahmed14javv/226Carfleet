@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Carfleet
-{
-    public class Car
+
+namespace Carfleet{
+    public class Vehicle
     {
         #region private attributes
         private string _registration;
@@ -12,7 +12,7 @@ namespace Carfleet
         #endregion private attributes
 
         #region public methods
-        public Car(string registration, string brand, string model, string chassisNumber)
+        public Vehicle(string registration, string brand, string model, string chassisNumber)
         {
             _registration = registration;
             _brand = brand;

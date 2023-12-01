@@ -62,7 +62,30 @@ namespace Carfleet
             {
                 return _languages;
             }
+            set
+            {
+
+                foreach (string LanguageToAdd in value)
+                {
+                    if (!DoesExist(LanguageToAdd))
+                    {
+                        _languages.Add(LanguageToAdd);
+                    }
+                }
+            }
         }
         #endregion public methods
+
+        private bool DoesExist(string LanguageToVerify)
+        {
+            foreach (string existingLanguage in _languages)
+            {
+                if(existingLanguage == LanguageToVerify)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using System.Dynamic;
+using System;
 
 namespace Carfleet
 {
@@ -25,6 +26,18 @@ namespace Carfleet
             }
         }
 
+        public void TakeAVehicle (Vehicle vehicule)
+        {
+           
+        }
+
+        public Vehicle Vehicle
+        {
+            get
+            {
+                return vehicule;
+            }
+        }
 
 
         #endregion public methods
